@@ -12,5 +12,13 @@
                 <baseurl type="REST1.3">http://Tyrael.github.com/pear/rest/</baseurl>
             </rest>
         </primary>
+        <mirror host="tyrael.github.com/pear"> 
+            <rest>
+                <baseurl type="REST1.0">http://Tyrael.github.com/pear/rest/</baseurl> 
+                <baseurl type="REST1.1">http://Tyrael.github.com/pear/rest/</baseurl> 
+                <baseurl type="REST1.2">http://Tyrael.github.com/pear/rest/</baseurl> 
+                <baseurl type="REST1.3">http://Tyrael.github.com/pear/rest/</baseurl> 
+            </rest> 
+        </mirror> 
     </servers>
 </channel>
