@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package version="2.1" xmlns="http://pear.php.net/dtd/package-2.1" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.1     http://pear.php.net/dtd/package-2.1.xsd">
+ <name>suhosin</name>
+ <channel>Tyrael.github.com/pear</channel>
+ <summary>Stefan Esser's php extension for hardening php</summary>
+ <description>
+Suhosin is an advanced protection system for PHP installations. It was designed to protect servers and users from known and unknown flaws in PHP applications and the PHP core.
+</description>
+ <lead>
+  <name>Stefan Esser</name>
+  <user>sesser</user>
+  <email>stefan.esser@sektioneins.de</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-02-22</date>
+ <time>16:23:47</time>
+ <version>
+  <release>0.9.32.1</release>
+  <api>0.9.32.1</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License Version 3.01</license>
+ <notes>just packaging the 0.9.32.1 version</notes>
+ <contents>
+  <dir name="/">
+   <dir name="mbregex">
+    <file role="src" name="mbregex.h" md5sum="f82971413fb758c0683d99f2315e6082"/>
+   </dir>
+   <dir name="tests">
+    <dir name="executor">
+     <file role="test" name="disable_emod_off.phpt" md5sum="fe60fbf6d344b2418d370a9d22c3cfdc"/>
+     <file role="test" name="disable_emod_on.phpt" md5sum="d03c419047681a26c3e763ae5065c535"/>
+     <file role="test" name="disable_eval_off.phpt" md5sum="d4daf021f5bc443caf13a07bd5223da7"/>
+     <file role="test" name="disable_eval_on.phpt" md5sum="77669f4761eb043b7734d0861dc15c5e"/>
+     <file role="test" name="memory_limit.phpt" md5sum="9d53637e78a0e891dd82d2f65aadf9fa"/>
+     <file role="test" name="memory_limit_other_hardlimit.phpt" md5sum="50dcacfdcf7955b0997ebab7e3bf5b3b"/>
+     <file role="test" name="negative_memory_limit.phpt" md5sum="1973b9a1e9b237d5807decda7b9ad1a1"/>
+     <file role="test" name="preg_replace.phpt" md5sum="d225b9c154714df12a5ae35bc2855f0f"/>
+     <file role="test" name="preg_replace_error.phpt" md5sum="271e0aba0c30e226dc0eca930cff0858"/>
+     <file role="test" name="recursion_maxdepth.phpt" md5sum="434eb5c95c7dbf9189da80e41d6e79a6"/>
+    </dir>
+    <dir name="filter">
+     <file role="test" name="get_globals.phpt" md5sum="a66bf9d472a25e777fd503cf5ca66a28"/>
+    </dir>
+    <dir name="funcs">
+     <file role="test" name="crypt_blowfish.phpt" md5sum="f111c0796ec029c14499646cffad65dc"/>
+     <file role="test" name="crypt_ext_des.phpt" md5sum="a67cd8e81486c6709b2b67a0e4e9c6b9"/>
+     <file role="test" name="crypt_md5.phpt" md5sum="aeeb30d17c6293a7af110d132517bce0"/>
+     <file role="test" name="crypt_std_des.phpt" md5sum="c224694c93f59058778e07f04228f15a"/>
+     <file role="test" name="sha256.phpt" md5sum="cebb00e59650bfce950cdaa191d3268d"/>
+    </dir>
+    <dir name="include">
+     <file role="test" name="include_constant.phpt" md5sum="a15a64255e73e72225d3361581946544"/>
+     <file role="test" name="include_etc_passwd.phpt" md5sum="3402c092a5900a706f1e5e066a36f8d8"/>
+     <file role="test" name="include_once_constant.phpt" md5sum="a002775bb2e59eda80f03ea90e2248b4"/>
+     <file role="test" name="include_once_tmpvar.phpt" md5sum="cd9956fdf9c8567fd46d6d8e6d90fdad"/>
+     <file role="test" name="include_once_var.phpt" md5sum="5e1b3c1ad03ba65d85d7de84a07b8ce0"/>
+     <file role="test" name="include_tmpvar.phpt" md5sum="67b5c98c25740740070b832fa5aa3c90"/>
+     <file role="test" name="include_var.phpt" md5sum="1e02b7a22e831b7cffa81bf340f8b0eb"/>
+     <file role="test" name="require_constant.phpt" md5sum="42dac4367f3ece9df882e71bd03b14a4"/>
+     <file role="test" name="require_once_constant.phpt" md5sum="c309711c1cb2c22da33c820b9bd2cc87"/>
+     <file role="test" name="require_once_tmpvar.phpt" md5sum="fce4c7b71e310034fdc3ef251df24c1a"/>
+     <file role="test" name="require_once_var.phpt" md5sum="1abd359c8168fc1f18b53624d8ffde6e"/>
+     <file role="test" name="require_tmpvar.phpt" md5sum="a2ac3ae984d543cf11c4a43fd7ff9ea0"/>
+     <file role="test" name="require_var.phpt" md5sum="72859d4a5f28e0d6659725f6c0844d27"/>
+    </dir>
+    <file role="test" name="empty.inc" md5sum="6e1a112157f36187f250e6c1ab460857"/>
+    <file role="test" name="skipif.inc" md5sum="1eb985adf148c849e684f5f457f6ddc2"/>
+    <file role="test" name="skipifcli.inc" md5sum="1961bacac360d89f9bda60eb3f1deaf6"/>
+    <file role="test" name="skipifnotcli.inc" md5sum="19d2788f65645b00d57a15da56150c7f"/>
+   </dir>
+   <file role="src" name="aes.c" md5sum="e09df54ee56e146f31df3d312c3dc588"/>
+   <file role="src" name="compat_snprintf.c" md5sum="cec17141a97dc199845dad33d3a58bf4"/>
+   <file role="src" name="config.m4" md5sum="a6031dab45a81c950e6f926e022e6434"/>
+   <file role="src" name="config.w32" md5sum="9cb3f5c31a295324e43d97b00fcf2b36"/>
+   <file role="src" name="crypt.c" md5sum="e723392591b48403a4b948b8345fd276"/>
+   <file role="src" name="crypt_blowfish.c" md5sum="9a1726ced078a29e57fa3e44bf4d13be"/>
+   <file role="src" name="crypt_md5.c" md5sum="9a37f30163c05bc5a0d8d186024fd523"/>
+   <file role="src" name="crypt_md5.h" md5sum="2c78d068feb76edc835d570b7e2c6d1e"/>
+   <file role="src" name="crypt_win32.c" md5sum="27ec02851053c1773765f0f4fa60a075"/>
+   <file role="src" name="crypt_win32.h" md5sum="3bd5e3e47cde7764c2f3cc839702395a"/>
+   <file role="src" name="execute.c" md5sum="fc0f7540bdfbf488d0a0830db78ebfcb"/>
+   <file role="src" name="ex_imp.c" md5sum="d7c4ff065e699f6be87e82c4198f1af5"/>
+   <file role="src" name="header.c" md5sum="7d59144affb1818d86a25627006788a2"/>
+   <file role="src" name="ifilter.c" md5sum="8f2dbfcf7332c2001ed96aa1ac51da90"/>
+   <file role="src" name="log.c" md5sum="d3744bb3e518774e59fcffd83b6e09cf"/>
+   <file role="src" name="mbregex.h" md5sum="597f85dbcb7a9396f1f0d216578f36bf"/>
+   <file role="src" name="memory_limit.c" md5sum="55b528fbb86e9f863597aa4f7e7caa2b"/>
+   <file role="src" name="php_suhosin.h" md5sum="9b34aea504acc7161eba62e5e2634cd1"/>
+   <file role="src" name="post_handler.c" md5sum="ee30ccb61279c27bcfe2a9e5a77227e3"/>
+   <file role="src" name="rfc1867.c" md5sum="702ae2218d24fd765bcad5339bc95b5a"/>
+   <file role="src" name="session.c" md5sum="da1249bed56724d69a982cbba751afbc"/>
+   <file role="src" name="sha256.c" md5sum="888f8633e179f8238e82e33b23c3e08f"/>
+   <file role="src" name="sha256.h" md5sum="487701beae45ba97b5846aa1cddcd5e8"/>
+   <file role="src" name="suhosin.c" md5sum="553ff5df288bd2c8af75ba715174fe9f"/>
+   <file role="src" name="suhosin_logo.h" md5sum="9d6344fa43adfb9e776fff2865a55dd0"/>
+   <file role="src" name="suhosin_rfc1867.h" md5sum="bf1924e99e0d174d5497e90878a107c5"/>
+   <file role="src" name="treat_data.c" md5sum="91cc73be3377cc778ed874345e3fbb8f"/>
+   <file role="src" name="ufilter.c" md5sum="98165e1cbbc07d94ab8d53f77af2dc05"/>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.8</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <providesextension>suhosin</providesextension>
+ <extsrcrelease/>
+</package>

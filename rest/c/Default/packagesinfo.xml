@@ -26,5 +26,31 @@ Bytekit is a PHP extension that provides a userspace representation of the opcod
             <d>a:1:{s:8:"required";a:2:{s:3:"php";a:1:{s:3:"min";s:5:"5.2.0";}s:13:"pearinstaller";a:1:{s:3:"min";s:5:"1.4.8";}}}</d>
         </deps>
 
+    </pi>    <pi>
+        <p>
+            <n>suhosin</n>
+            <c>Tyrael.github.com/pear</c>
+            <ca xlink:href="/rest/c/Default">Default</ca>
+            <l>PHP License Version 3.01</l>
+            <s>Stefan Esser's php extension for hardening php</s>
+            <d>
+Suhosin is an advanced protection system for PHP installations. It was designed to protect servers and users from known and unknown flaws in PHP applications and the PHP core.
+</d>
+            <r xlink:href="/rest/r/suhosin" />
+        </p>
+
+        <a>
+            <r>
+                <v>0.9.32.1</v>
+                <s>stable</s>
+            </r>
+
+        </a>
+
+        <deps>
+            <v>0.9.32.1</v>
+            <d>a:1:{s:8:"required";a:2:{s:3:"php";a:1:{s:3:"min";s:5:"5.2.0";}s:13:"pearinstaller";a:1:{s:3:"min";s:5:"1.4.8";}}}</d>
+        </deps>
+
     </pi>
 </f>

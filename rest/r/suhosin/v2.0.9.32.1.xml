@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/suhosin">suhosin</p>
+    <c>Tyrael.github.com/pear</c>
+    <v>0.9.32.1</v>
+    <a>0.9.32.1</a>
+    <mp>5.2.0</mp>
+    <st>stable</st>
+    <l>PHP License Version 3.01</l>
+    <m>sesser</m>
+    <s>Stefan Esser's php extension for hardening php</s>
+    <d>
+Suhosin is an advanced protection system for PHP installations. It was designed to protect servers and users from known and unknown flaws in PHP applications and the PHP core.
+</d>
+    <da>2011-02-22 16:23:47</da>
+    <n>just packaging the 0.9.32.1 version</n>
+    <f>457216</f>
+    <g>http://Tyrael.github.com/pear/get/suhosin-0.9.32.1</g>
+    <x xlink:href="package.0.9.32.1.xml"/>
+</r>
